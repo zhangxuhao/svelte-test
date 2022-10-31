@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+
+		<script lang="ts">
+			import Router from 'svelte-spa-router';
+			import routes from './routes';
+		</script>
+
+		%sveltekit.head%
+		  
+	</head>
+	<body>
+		<div>
+			
+			%sveltekit.body%
+
+			<main>
+				<Router {routes} />
+			</main>
+		</div>
+		
+	</body>
+</html>
